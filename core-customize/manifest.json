@@ -1,101 +1,99 @@
 {
-  "commerceSuiteVersion": "2211.46",
-  "extensionPacks": [
-    {
-      "name": "hybris-commerce-integrations",
-      "version": "2211.40"
-    }
-  ],
-  "enableImageProcessingService": true,
-  "extensions": [
-  ],
-  "useConfig": {
-    "properties": [
-      {
-        "location": "/hybris/config/environments/local-dev.properties",
-        "persona": "development"
-      },
-      {
-        "location": "/hybris/config/environments/local-stage.properties",
-        "persona": "staging"
-      },
-      {
-        "location": "/hybris/config/environments/local-prod.properties",
-        "persona": "production"
-      },
-      {
-        "location": "/hybris/config/environments/common.properties"
-      },
-      {
-        "aspect": "api",
-        "location": "/hybris/config/environments/api.properties"
-      },
-      {
-        "aspect": "backoffice",
-        "location": "/hybris/config/environments/backoffice.properties"
-      }
+    "commerceSuiteVersion": "2211-jdk21.4",
+    "extensionPacks": [
+        {
+            "name": "hybris-commerce-integrations",
+            "version": "2211-jdk21.1"
+        }
     ],
-    "extensions": {
-      "location": "/hybris/config/localextensions.xml",
-      "exclude": [
-      ]
-    }
-  },
-  "properties": [
-    {
-      "key": "datahubadapter.datahuboutbound.password",
-      "value": "<dh_admin_pwd>"
-    },
-    {
-      "key": "datahubadapter.datahuboutbound.url",
-      "value": "http://datahub:8080/datahub-webapp/v1"
-    },
-    {
-      "key": "sapcoreconfiguration.datahuboutbound.enabled",
-      "value": "true"
-    }
-  ],
-  "aspects": [
-    {
-      "name": "backoffice",
-      "properties": [
-        {
-          "key": "datahub.backoffice.rest.client.password.admin",
-          "value": "<dh_admin_pwd>"
-        },
-        {
-          "key": "datahub.backoffice.rest.client.password.developer",
-          "value": "<dh_developer_pwd>"
+    "enableImageProcessingService": true,
+    "extensions": [],
+    "useConfig": {
+        "properties": [
+            {
+                "location": "/hybris/config/environments/local-dev.properties",
+                "persona": "development"
+            },
+            {
+                "location": "/hybris/config/environments/local-stage.properties",
+                "persona": "staging"
+            },
+            {
+                "location": "/hybris/config/environments/local-prod.properties",
+                "persona": "production"
+            },
+            {
+                "location": "/hybris/config/environments/common.properties"
+            },
+            {
+                "aspect": "api",
+                "location": "/hybris/config/environments/api.properties"
+            },
+            {
+                "aspect": "backoffice",
+                "location": "/hybris/config/environments/backoffice.properties"
+            }
+        ],
+        "extensions": {
+            "location": "/hybris/config/localextensions.xml",
+            "exclude": []
         }
-      ],
-      "webapps": [
-        {
-          "name": "hac",
-          "contextPath": "/hac"
-        },
-        {
-          "name": "backoffice",
-          "contextPath": "/backoffice"
-        },
-        {
-          "name": "datahubadapter",
-          "contextPath": "/datahubadapter"
-        },
-        {
-          "name": "oauth2",
-          "contextPath": "/authorizationserver"
-        }
-      ]
     },
-    {
-      "name": "api",
-      "properties": [],
-      "webapps": [
+    "properties": [
         {
-          "name": "hac",
-          "contextPath": "/hac"
+            "key": "datahubadapter.datahuboutbound.password",
+            "value": "<dh_admin_pwd>"
+        },
+        {
+            "key": "datahubadapter.datahuboutbound.url",
+            "value": "http://datahub:8080/datahub-webapp/v1"
+        },
+        {
+            "key": "sapcoreconfiguration.datahuboutbound.enabled",
+            "value": "true"
         }
-      ]
-    }
-  ]
+    ],
+    "aspects": [
+        {
+            "name": "backoffice",
+            "properties": [
+                {
+                    "key": "datahub.backoffice.rest.client.password.admin",
+                    "value": "<dh_admin_pwd>"
+                },
+                {
+                    "key": "datahub.backoffice.rest.client.password.developer",
+                    "value": "<dh_developer_pwd>"
+                }
+            ],
+            "webapps": [
+                {
+                    "name": "hac",
+                    "contextPath": "/hac"
+                },
+                {
+                    "name": "backoffice",
+                    "contextPath": "/backoffice"
+                },
+                {
+                    "name": "datahubadapter",
+                    "contextPath": "/datahubadapter"
+                },
+                {
+                    "name": "authorizationserver",
+                    "contextPath": "/authorizationserver"
+                }
+            ]
+        },
+        {
+            "name": "api",
+            "properties": [],
+            "webapps": [
+                {
+                    "name": "hac",
+                    "contextPath": "/hac"
+                }
+            ]
+        }
+    ]
 }
