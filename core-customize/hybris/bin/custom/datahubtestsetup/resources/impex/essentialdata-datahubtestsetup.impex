@@ -10,9 +10,8 @@ INSERT_UPDATE DataHubInstanceModel;instanceName[unique = true];instanceLocation
 INSERT_UPDATE OAuthClientDetails;clientId[unique=true]; resourceIds; scope; authorizedGrantTypes                ; authorities; clientSecret; registeredRedirectUri
                                 ;eic                  ; hybris     ; basic; implicit,client_credentials,password; ROLE_CLIENT; secret      ; https://backoffice:8088/oauth2_implicit_callback;
 
-$password=@password[translator = de.hybris.platform.impex.jalo.translators.UserPasswordTranslator]
-INSERT_UPDATE Employee; uid[unique = true]; name    ; description                    ; $password         ; groups(uid)
-                      ; datahub           ; Data Hub; A user for imports from DataHub; *:<datahub_pwd>; hac_console_impeximport
+INSERT_UPDATE Employee; uid[unique = true]; name    ; description                    ; password         ; groups(uid)
+                      ; datahub           ; Data Hub; A user for imports from DataHub; <datahub_pwd>; hac_console_impeximport
 UPDATE Employee; uid[unique = true]; loginDisabled
                ; datahub           ; false
 
