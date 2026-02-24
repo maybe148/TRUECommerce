@@ -11,11 +11,6 @@
     "build:ssr": "ng build"
   },
   "private": true,
-  "resolutions": {
-    "package-a": "2.0.0",
-    "package-b": "5.0.0",
-    "package-c": "1.5.2"
-  },
   "dependencies": {
     "@angular/common": "^19.2.0",
     "@angular/compiler": "^19.2.0",
