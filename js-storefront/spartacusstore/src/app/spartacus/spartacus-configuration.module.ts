@@ -27,7 +27,7 @@ import { defaultCmsContentProviders, layoutConfigFactory, mediaConfig } from "@s
     },
   }), provideConfig(<FeaturesConfig>{
     features: {
-      level: '221121.1'
+      level: '2211.43'
     }
   })]
 })
