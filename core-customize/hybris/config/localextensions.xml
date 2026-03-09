@@ -274,6 +274,8 @@
   <extension name='saporderexchangebackoffice'/>
   <extension name='sapcoreaddon'/>    
 
+<!-- Bundling Extensions -->
+  <extension name= 'configurablebundleaddon' />
 
   </extensions>
 </hybrisconfig>
