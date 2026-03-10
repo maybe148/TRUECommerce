@@ -275,15 +275,13 @@
   <extension name='sapcoreaddon'/>    
 
  
-<!-- Add on 09/03/2026 -->
-<!-- ------------------------------------------------------- -->
+<!-- BoI 09/03/2026 -->
 <!-- Bundling Extensions -->
   <extension name= 'configurablebundleaddon' />
-<!-- ------------------------------------------------------- -->
+<!-- EoI 09/03/2026 -->
 
     
-<!-- Add on 10/03/2026 -->
-<!-- ------------------------------------------------------- -->
+<!-- BoI 10/03/2026 -->
 <!-- SAP Cloud Platform Integration -->
   <extension name='sapcpiproductexchange'/>
   <extension name='sapcpicustomerexchangeb2b'/>
@@ -295,7 +293,7 @@
 <!-- Master Data -->
   <extension name='sapcustomerb2b'/>
   <extension name='sapcustomerb2bbackoffice'/>
-<!-- ------------------------------------------------------- -->
+<!-- EoI 10/03/2026 -->
 
     
   </extensions>
