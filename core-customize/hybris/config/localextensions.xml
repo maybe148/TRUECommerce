@@ -274,11 +274,29 @@
   <extension name='saporderexchangebackoffice'/>
   <extension name='sapcoreaddon'/>    
 
+ 
 <!-- Add on 09/03/2026 -->
 <!------------------------------------------------------------->
 <!-- Bundling Extensions -->
   <extension name= 'configurablebundleaddon' />
 <!------------------------------------------------------------->
+
+    
+<!-- Add on 10/03/2026 -->
+<!------------------------------------------------------------->
+<!-- SAP Cloud Platform Integration -->
+  <extension name='sapcpiproductexchange'/>
+  <extension name='sapcpicustomerexchangeb2b'/>
+  <extension name='sapcpiorderexchangeoms'/>
+  <extension name='sapcpiorderexchangeomsb2b'/>
+  <extension name='sapcpiorderexchangeb2b'/>
+  <extension name='ysapcpiomsfulfillment'/>
+
+<!-- Master Data -->
+  <extension name='sapcustomerb2b'/>
+  <extension name='sapcustomerb2bbackoffice'/>
+<!------------------------------------------------------------->
+
     
   </extensions>
 </hybrisconfig>
