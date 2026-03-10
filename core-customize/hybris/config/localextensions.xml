@@ -274,8 +274,11 @@
   <extension name='saporderexchangebackoffice'/>
   <extension name='sapcoreaddon'/>    
 
+<!-- Add on 09/03/2026 -->
+<!------------------------------------------------------------->
 <!-- Bundling Extensions -->
   <extension name= 'configurablebundleaddon' />
-
+<!------------------------------------------------------------->
+    
   </extensions>
 </hybrisconfig>
