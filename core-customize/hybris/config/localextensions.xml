@@ -280,6 +280,16 @@
   <extension name= 'configurablebundleaddon' />
 <!-- EoI 09/03/2026 -->
 
+<!-- BoI 23/03/2026 -->
+<!-- Bundling Extensions -->
+  <extension name= 'cpqproductconfigfacades' />
+  <extension name= 'cpqproductconfigocc' />
+  <extension name= 'cpqproductconfigocctests' />
+  <extension name= 'cpqproductconfigorderexchange' />
+  <extension name= 'cpqproductconfigsampledataaddon' />
+  <extension name= 'cpqproductconfigservices' />
+  <extension name= 'cpqproductconfigquoteexchange' />
+<!-- EoI 23/03/2026 -->   
     
 <!-- BoI 10/03/2026 -->
 <!-- SAP Cloud Platform Integration -->
