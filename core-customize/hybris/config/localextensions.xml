@@ -306,7 +306,7 @@
 <!-- EoI 10/03/2026 -->
 
 <!-- BoI 08/04/2026 -->
-<!-- Test Omni Commerce Connect(OCC) -->
+<!-- Omni Commerce Connect(OCC) -->
   <extension name= 'ycommercewebservices' />
   <extension name= 'ycommercewebservicestest' />
 <!-- EoI 08/04/2026 --> 
