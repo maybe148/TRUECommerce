@@ -1,0 +1,56 @@
+.custom-order-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0;
+  background: #f3f3f3;
+  padding: 40px 48px;
+  margin: 24px auto;
+  max-width: 1120px;
+}
+
+.info-column {
+  padding: 0 40px;
+  border-right: 1px solid #777;
+}
+
+.info-column:first-child {
+  padding-left: 0;
+}
+
+.info-column:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+
+.info-item {
+  margin-bottom: 24px;
+}
+
+.info-item .label {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.info-item .value {
+  font-size: 14px;
+  line-height: 1.4;
+  margin-top: 4px;
+}
+
+.info-item.red .label,
+.info-item.red .value {
+  color: #d71920;
+}
+
+.info-item.normal .label {
+  color: #111;
+}
+
+.info-item.normal .value {
+  color: #111;
+}
+
+.remark {
+  margin-top: 56px;
+}

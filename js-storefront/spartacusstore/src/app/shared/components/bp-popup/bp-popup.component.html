@@ -1,0 +1,19 @@
+<div class="popup-backdrop" *ngIf="visible">
+  <div class="popup-modal">
+    <h2>Business Partner Information</h2>
+
+    <p>{{ message }}</p>
+
+    <div class="popup-actions">
+      <button
+        *ngIf="showOrderHistoryButton"
+        type="button"
+        (click)="goToOrderHistory()"
+      >
+        Order History
+      </button>
+
+      <button type="button" (click)="close()">Close</button>
+    </div>
+  </div>
+</div>
