@@ -4,7 +4,7 @@
     "extensionPacks" : [
     {
         "name" : "hybris-commerce-integrations",
-        "version" : "2211-jdk21.8"
+        "version" : "2211-jdk21.7"
     }
     ],
     "extensions": [
