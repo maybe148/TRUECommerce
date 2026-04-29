@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { translationChunksConfig, translationsEn } from "@spartacus/assets";
 import { FeaturesConfig, I18nConfig, OccConfig, provideConfig, provideConfigFactory, SiteContextConfig } from "@spartacus/core";
 import { defaultCmsContentProviders, layoutConfigFactory, mediaConfig } from "@spartacus/storefront";
+import { OrderDetailsExtraInfoComponent } from '../custom/order-details-extra-info/order-details-extra-info.component';
 
 @NgModule({
   declarations: [],
@@ -29,6 +30,12 @@ import { defaultCmsContentProviders, layoutConfigFactory, mediaConfig } from "@s
     features: {
       level: '221121.5'
     }
+  }), provideConfig({
+    cmsComponents: {
+      AccountOrderDetailsOverviewComponent: {
+        component: OrderDetailsExtraInfoComponent,
+    },
+  },
   })]
 })
 export class SpartacusConfigurationModule { }
